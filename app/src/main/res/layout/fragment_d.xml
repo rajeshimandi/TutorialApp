@@ -2,22 +2,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00FF00">
+    android:background="#FF00FF">
 
     <TextView
-        android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Frag 2"
+        android:text="Frag 4"
         android:textSize="30sp"></TextView>
 
     <Button
-        android:id="@+id/fragButton2"
+        android:id="@+id/fragButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:text="Button in Frag2" />
+        android:text="Button in Frag4" />
 
 </RelativeLayout>

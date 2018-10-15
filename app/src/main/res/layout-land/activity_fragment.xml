@@ -6,6 +6,7 @@
 
     <fragment
         android:id="@+id/fragA"
+        android:tag="fragA"
         android:name="com.example.anuraj.tutorialsapplication.activities.fragments.FragmentA"
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -13,6 +14,7 @@
 
     <fragment
         android:id="@+id/fragB"
+        android:tag="fragB"
         android:name="com.example.anuraj.tutorialsapplication.activities.fragments.FragmentB"
         android:layout_width="0dp"
         android:layout_height="match_parent"
