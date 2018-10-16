@@ -11,8 +11,10 @@ import android.widget.Toast;
 
 import com.example.anuraj.tutorialsapplication.R;
 import com.example.anuraj.tutorialsapplication.activities.fragments.FragmentActivity;
+import com.example.anuraj.tutorialsapplication.activities.fragments.ViewPagerActivity;
 import com.example.anuraj.tutorialsapplication.activities.intents.ActivityA;
 import com.example.anuraj.tutorialsapplication.activities.lifecycle.LifeCycleActivity;
+import com.example.anuraj.tutorialsapplication.activities.sharedprefs.SharedPrefActivity;
 import com.example.anuraj.tutorialsapplication.activities.uiwidgets.UIWidgetsActivity;
 
 import java.util.ArrayList;
@@ -36,6 +38,7 @@ public class HomeActivity extends AppCompatActivity implements MenuItemSelectedL
         mTopicsList.add("ActivityForResult");
         mTopicsList.add("Menu");
         mTopicsList.add("Fragments");
+        mTopicsList.add("Fragments-ViewPager");
         mTopicsList.add("JSON-Parsing");
         mTopicsList.add("SharedPreferences");
         mTopicsList.add("SQLite");
@@ -96,6 +99,13 @@ public class HomeActivity extends AppCompatActivity implements MenuItemSelectedL
                 startActivity(new Intent(HomeActivity.this, FragmentActivity.class));
                 break;
 
+            case 10:
+                startActivity(new Intent(HomeActivity.this, ViewPagerActivity.class));
+                break;
+
+            case 12:
+                startActivity(new Intent(HomeActivity.this, SharedPrefActivity.class));
+                break;
         }
 
     }

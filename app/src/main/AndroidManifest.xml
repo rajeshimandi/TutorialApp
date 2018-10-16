@@ -26,6 +26,8 @@
         <activity android:name=".activities.intents.ActivityA"></activity>
         <activity android:name=".activities.intents.ActivityB"></activity>
         <activity android:name=".activities.fragments.FragmentActivity"></activity>
+        <activity android:name=".activities.sharedprefs.SharedPrefActivity"></activity>
+        <activity android:name=".activities.fragments.ViewPagerActivity"></activity>
 
     </application>
 
