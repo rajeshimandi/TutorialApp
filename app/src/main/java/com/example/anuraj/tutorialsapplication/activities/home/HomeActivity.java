@@ -1,6 +1,7 @@
 package com.example.anuraj.tutorialsapplication.activities.home;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -10,10 +11,12 @@ import android.view.Menu;
 import android.widget.Toast;
 
 import com.example.anuraj.tutorialsapplication.R;
+import com.example.anuraj.tutorialsapplication.activities.async.AyncTaskActivity;
 import com.example.anuraj.tutorialsapplication.activities.fragments.FragmentActivity;
 import com.example.anuraj.tutorialsapplication.activities.fragments.ViewPagerActivity;
 import com.example.anuraj.tutorialsapplication.activities.intents.ActivityA;
 import com.example.anuraj.tutorialsapplication.activities.lifecycle.LifeCycleActivity;
+import com.example.anuraj.tutorialsapplication.activities.retrofit.RetrofitActivity;
 import com.example.anuraj.tutorialsapplication.activities.sharedprefs.SharedPrefActivity;
 import com.example.anuraj.tutorialsapplication.activities.uiwidgets.UIWidgetsActivity;
 
@@ -39,6 +42,8 @@ public class HomeActivity extends AppCompatActivity implements MenuItemSelectedL
         mTopicsList.add("Menu");
         mTopicsList.add("Fragments");
         mTopicsList.add("Fragments-ViewPager");
+        mTopicsList.add("ListView Vs RecyclerView");
+        mTopicsList.add("RecyclerView");
         mTopicsList.add("JSON-Parsing");
         mTopicsList.add("SharedPreferences");
         mTopicsList.add("SQLite");
@@ -79,32 +84,41 @@ public class HomeActivity extends AppCompatActivity implements MenuItemSelectedL
 
 
     @Override
-    public void onMenuItemSelected(int pos) {
+    public void onMenuItemSelected(int pos, String name) {
         Toast.makeText(HomeActivity.this, "Selected " + mTopicsList.get(pos), Toast.LENGTH_SHORT).show();
 
-        switch (pos) {
+        switch (name) {
 
-            case 0:
+            case "LifeCycle":
                 startActivity(new Intent(HomeActivity.this, LifeCycleActivity.class));
                 break;
-            case 4:
+            case "UI Widgets":
                 startActivity(new Intent(HomeActivity.this, UIWidgetsActivity.class));
                 break;
 
-            case 6:
+            case "Intents":
                 startActivity(new Intent(HomeActivity.this, ActivityA.class));
                 break;
 
-            case 9:
+            case "Fragments":
                 startActivity(new Intent(HomeActivity.this, FragmentActivity.class));
                 break;
 
-            case 10:
+            case "Fragments-ViewPager":
                 startActivity(new Intent(HomeActivity.this, ViewPagerActivity.class));
                 break;
 
-            case 12:
+            case "SharedPreferences":
+
                 startActivity(new Intent(HomeActivity.this, SharedPrefActivity.class));
+                break;
+
+            case "Retrofit":
+                startActivity(new Intent(HomeActivity.this, RetrofitActivity.class));
+                break;
+
+            case "AsyncTask":
+                startActivity(new Intent(HomeActivity.this, AyncTaskActivity.class));
                 break;
         }
 

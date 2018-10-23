@@ -37,7 +37,7 @@ public class HomeListAdapter extends RecyclerView.Adapter<HomeListAdapter.MenuVi
         holder.menuName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                itemSelectedListener.onMenuItemSelected(position);
+                itemSelectedListener.onMenuItemSelected(position, mMenuList.get(position));
             }
         });
     }

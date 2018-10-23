@@ -44,7 +44,7 @@ public class UIWidgetsActivity extends AppCompatActivity implements View.OnClick
         Button button = findViewById(R.id.button2);
         EditText editText = findViewById(R.id.editText);
         CheckBox checkBox = findViewById(R.id.checkBox);
-        TextView textView = findViewById(R.id.textView);
+        TextView textView = findViewById(R.id.text);
         RadioGroup radioGroup = findViewById(R.id.radioGroup);
         Spinner spinner = findViewById(R.id.spinner);
         ProgressBar progressBar = findViewById(R.id.progressBar);

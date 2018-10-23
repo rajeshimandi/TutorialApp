@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,7 +26,7 @@ public class FragmentA extends Fragment {
         super.onAttach(context);
         try {
             customClickListener = (CustomClickListener) context;
-        }catch (ClassCastException e){
+        } catch (ClassCastException e) {
             throw new ClassCastException("Activity must implement CustomClickListener");
         }
     }
@@ -47,14 +48,25 @@ public class FragmentA extends Fragment {
         }
 
 
-        ((Button)view.findViewById(R.id.fragButton1)).setOnClickListener(new View.OnClickListener() {
+        ((Button) view.findViewById(R.id.fragButton1)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //code for portrait
                 //getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragContainer,new FragmentB()).addToBackStack(null).commit();
 
                 //Portrait
-                customClickListener.onButtonClick("Clicked button here", 5);
+                //customClickListener.onButtonClick("Clicked button here", 5);
+
+                //Dialog
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                Fragment fragment = getActivity().getSupportFragmentManager().findFragmentByTag("dialog");
+
+                if (fragment != null) {
+                    ft.remove(fragment);
+                }
+
+                SampleDialogFrag dialogFrag = new SampleDialogFrag();
+                dialogFrag.show(ft, "dialog");
             }
         });
 

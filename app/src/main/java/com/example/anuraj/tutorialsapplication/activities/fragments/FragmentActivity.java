@@ -25,7 +25,7 @@ public class FragmentActivity extends AppCompatActivity implements CustomClickLi
 
         // Code for portrait mode
 
-        /*FragmentA fragmentA = new FragmentA();
+        FragmentA fragmentA = new FragmentA();
 
         Bundle bundle = new Bundle();
         bundle.putInt("version",3);
@@ -35,7 +35,7 @@ public class FragmentActivity extends AppCompatActivity implements CustomClickLi
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragContainer,fragmentA, "fragA");
-        fragmentTransaction.commit();*/
+        fragmentTransaction.commit();
 
 
     }

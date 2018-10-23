@@ -3,6 +3,6 @@ package com.example.anuraj.tutorialsapplication.activities.home;
 
 public interface MenuItemSelectedListener {
 
-    void onMenuItemSelected(int pos);
+    void onMenuItemSelected(int pos, String name);
 
 }
