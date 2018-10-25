@@ -14,11 +14,14 @@ import com.example.anuraj.tutorialsapplication.R;
 import com.example.anuraj.tutorialsapplication.activities.async.AyncTaskActivity;
 import com.example.anuraj.tutorialsapplication.activities.fragments.FragmentActivity;
 import com.example.anuraj.tutorialsapplication.activities.fragments.ViewPagerActivity;
+import com.example.anuraj.tutorialsapplication.activities.googlemap.MapsActivity;
 import com.example.anuraj.tutorialsapplication.activities.intents.ActivityA;
 import com.example.anuraj.tutorialsapplication.activities.lifecycle.LifeCycleActivity;
+import com.example.anuraj.tutorialsapplication.activities.menu.MenuActivity;
 import com.example.anuraj.tutorialsapplication.activities.retrofit.RetrofitActivity;
 import com.example.anuraj.tutorialsapplication.activities.sharedprefs.SharedPrefActivity;
 import com.example.anuraj.tutorialsapplication.activities.uiwidgets.UIWidgetsActivity;
+import com.example.anuraj.tutorialsapplication.activities.webview.WebViewActivity;
 
 import java.util.ArrayList;
 
@@ -119,6 +122,18 @@ public class HomeActivity extends AppCompatActivity implements MenuItemSelectedL
 
             case "AsyncTask":
                 startActivity(new Intent(HomeActivity.this, AyncTaskActivity.class));
+                break;
+
+            case "Menu":
+                startActivity(new Intent(HomeActivity.this, MenuActivity.class));
+                break;
+
+            case "GoogleMap":
+                startActivity(new Intent(HomeActivity.this, MapsActivity.class));
+                break;
+
+            case "WebView":
+                startActivity(new Intent(HomeActivity.this, WebViewActivity.class));
                 break;
         }
 
