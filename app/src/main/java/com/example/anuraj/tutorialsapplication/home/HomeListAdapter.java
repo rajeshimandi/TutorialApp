@@ -1,4 +1,4 @@
-package com.example.anuraj.tutorialsapplication.activities.home;
+package com.example.anuraj.tutorialsapplication.home;
 
 
 import android.support.v7.widget.RecyclerView;

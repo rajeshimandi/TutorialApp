@@ -1,4 +1,4 @@
-package com.example.anuraj.tutorialsapplication.activities.fragments;
+package com.example.anuraj.tutorialsapplication.fragments;
 
 /**
  * Created by AnuRaj on 10/15/2018.

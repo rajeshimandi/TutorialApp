@@ -1,4 +1,4 @@
-package com.example.anuraj.tutorialsapplication.activities.async;
+package com.example.anuraj.tutorialsapplication.async;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -11,8 +11,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.anuraj.tutorialsapplication.R;
-import com.example.anuraj.tutorialsapplication.activities.retrofit.Api;
-import com.example.anuraj.tutorialsapplication.activities.retrofit.Hero;
+import com.example.anuraj.tutorialsapplication.retrofit.Api;
+import com.example.anuraj.tutorialsapplication.retrofit.Hero;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 

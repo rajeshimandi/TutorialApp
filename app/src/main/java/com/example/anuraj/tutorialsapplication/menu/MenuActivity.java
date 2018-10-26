@@ -1,4 +1,4 @@
-package com.example.anuraj.tutorialsapplication.activities.menu;
+package com.example.anuraj.tutorialsapplication.menu;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

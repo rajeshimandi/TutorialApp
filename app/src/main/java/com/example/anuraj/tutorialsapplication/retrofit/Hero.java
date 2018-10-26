@@ -1,4 +1,4 @@
-package com.example.anuraj.tutorialsapplication.activities.retrofit;
+package com.example.anuraj.tutorialsapplication.retrofit;
 
 /**
  * Created by AnuRaj on 10/16/2018.

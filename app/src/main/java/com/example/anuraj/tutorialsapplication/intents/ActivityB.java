@@ -1,4 +1,4 @@
-package com.example.anuraj.tutorialsapplication.activities.intents;
+package com.example.anuraj.tutorialsapplication.intents;
 
 import android.content.Intent;
 import android.os.Bundle;

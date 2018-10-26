@@ -1,4 +1,4 @@
-package com.example.anuraj.tutorialsapplication.activities.uiwidgets;
+package com.example.anuraj.tutorialsapplication.uiwidgets;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

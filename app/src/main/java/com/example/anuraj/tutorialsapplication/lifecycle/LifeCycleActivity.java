@@ -1,4 +1,4 @@
-package com.example.anuraj.tutorialsapplication.activities.lifecycle;
+package com.example.anuraj.tutorialsapplication.lifecycle;
 
 import android.content.DialogInterface;
 import android.os.Bundle;

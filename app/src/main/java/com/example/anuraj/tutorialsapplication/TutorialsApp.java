@@ -1,4 +1,4 @@
-package com.example.anuraj.tutorialsapplication.activities;
+package com.example.anuraj.tutorialsapplication;
 
 import android.app.Application;
 import android.location.Location;

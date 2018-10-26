@@ -1,4 +1,4 @@
-package com.example.anuraj.tutorialsapplication.activities.sharedprefs;
+package com.example.anuraj.tutorialsapplication.sharedprefs;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;

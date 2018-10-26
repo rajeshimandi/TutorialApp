@@ -1,9 +1,12 @@
-package com.example.anuraj.tutorialsapplication.activities.googlemap;
+package com.example.anuraj.tutorialsapplication.googlemap;
 
+import android.location.Location;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
 import com.example.anuraj.tutorialsapplication.R;
+import com.example.anuraj.tutorialsapplication.ToastUtils;
+import com.example.anuraj.tutorialsapplication.TutorialsApp;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -39,9 +42,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
+        TutorialsApp app = (TutorialsApp) getApplication();
+        Location location = app.getLocation();
+        LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
+        mMap.addMarker(new MarkerOptions().position(latLng).title("My Loc"));
+
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        //LatLng sydney = new LatLng(-34, 151);
+        //mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
+        ToastUtils.showShortToast(MapsActivity.this, "Address:" + app.getAddress());
     }
 }

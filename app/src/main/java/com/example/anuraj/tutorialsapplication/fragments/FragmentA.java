@@ -1,4 +1,4 @@
-package com.example.anuraj.tutorialsapplication.activities.fragments;
+package com.example.anuraj.tutorialsapplication.fragments;
 
 import android.content.Context;
 import android.os.Bundle;

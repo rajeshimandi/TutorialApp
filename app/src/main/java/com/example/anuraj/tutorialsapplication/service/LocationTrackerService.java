@@ -1,4 +1,4 @@
-package com.example.anuraj.tutorialsapplication.activities.service;
+package com.example.anuraj.tutorialsapplication.service;
 
 import android.Manifest;
 import android.app.Service;
@@ -13,6 +13,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.text.TextUtils;
 
+import com.example.anuraj.tutorialsapplication.TutorialsApp;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
@@ -156,12 +157,9 @@ public class LocationTrackerService extends Service {
             } catch (IllegalArgumentException e) {
                 e.printStackTrace();
             }
-            /*UsersPotluckApp app = (UsersPotluckApp) getApplication();
+            TutorialsApp app = (TutorialsApp) getApplication();
             app.setAddress(resultMessage);
-            app.setPresentAdd(resultMessage);
             app.setLocation(mLocation);
-            app.setLocAddress(address);
-            com.titan.userspotluck.common.Log.logMessage("Address:" + resultMessage);*/
             stopService();
             return resultMessage;
         }

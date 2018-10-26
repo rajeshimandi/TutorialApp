@@ -1,4 +1,4 @@
-package com.example.anuraj.tutorialsapplication.activities.home;
+package com.example.anuraj.tutorialsapplication.home;
 
 
 public interface MenuItemSelectedListener {

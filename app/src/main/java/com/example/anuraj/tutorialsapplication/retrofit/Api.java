@@ -1,4 +1,4 @@
-package com.example.anuraj.tutorialsapplication.activities.retrofit;
+package com.example.anuraj.tutorialsapplication.retrofit;
 
 import java.util.List;
 

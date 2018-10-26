@@ -1,4 +1,4 @@
-package com.example.anuraj.tutorialsapplication.activities.home;
+package com.example.anuraj.tutorialsapplication.home;
 
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -11,18 +11,18 @@ import android.view.Menu;
 import android.widget.Toast;
 
 import com.example.anuraj.tutorialsapplication.R;
-import com.example.anuraj.tutorialsapplication.activities.TutorialsApp;
-import com.example.anuraj.tutorialsapplication.activities.async.AyncTaskActivity;
-import com.example.anuraj.tutorialsapplication.activities.fragments.FragmentActivity;
-import com.example.anuraj.tutorialsapplication.activities.fragments.ViewPagerActivity;
-import com.example.anuraj.tutorialsapplication.activities.googlemap.MapsActivity;
-import com.example.anuraj.tutorialsapplication.activities.intents.ActivityA;
-import com.example.anuraj.tutorialsapplication.activities.lifecycle.LifeCycleActivity;
-import com.example.anuraj.tutorialsapplication.activities.menu.MenuActivity;
-import com.example.anuraj.tutorialsapplication.activities.retrofit.RetrofitActivity;
-import com.example.anuraj.tutorialsapplication.activities.sharedprefs.SharedPrefActivity;
-import com.example.anuraj.tutorialsapplication.activities.uiwidgets.UIWidgetsActivity;
-import com.example.anuraj.tutorialsapplication.activities.webview.WebViewActivity;
+import com.example.anuraj.tutorialsapplication.TutorialsApp;
+import com.example.anuraj.tutorialsapplication.async.AyncTaskActivity;
+import com.example.anuraj.tutorialsapplication.fragments.FragmentActivity;
+import com.example.anuraj.tutorialsapplication.fragments.ViewPagerActivity;
+import com.example.anuraj.tutorialsapplication.googlemap.MapsActivity;
+import com.example.anuraj.tutorialsapplication.intents.ActivityA;
+import com.example.anuraj.tutorialsapplication.lifecycle.LifeCycleActivity;
+import com.example.anuraj.tutorialsapplication.menu.MenuActivity;
+import com.example.anuraj.tutorialsapplication.retrofit.RetrofitActivity;
+import com.example.anuraj.tutorialsapplication.sharedprefs.SharedPrefActivity;
+import com.example.anuraj.tutorialsapplication.uiwidgets.UIWidgetsActivity;
+import com.example.anuraj.tutorialsapplication.webview.WebViewActivity;
 
 import java.util.ArrayList;
 
