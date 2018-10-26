@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.anuraj.tutorialsapplication.R;
+import com.example.anuraj.tutorialsapplication.activities.TutorialsApp;
 
 /**
  * Created by AnuRaj on 10/24/2018.
@@ -25,6 +26,10 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         textView = findViewById(R.id.textView);
+
+        TutorialsApp app = (TutorialsApp) getApplication();
+        textView.setText(app.getUserName());
+
         textView.setOnClickListener(new View.OnClickListener() {
 
             @Override

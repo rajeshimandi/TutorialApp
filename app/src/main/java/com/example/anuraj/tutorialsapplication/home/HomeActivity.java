@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.widget.Toast;
 
 import com.example.anuraj.tutorialsapplication.R;
+import com.example.anuraj.tutorialsapplication.activities.TutorialsApp;
 import com.example.anuraj.tutorialsapplication.activities.async.AyncTaskActivity;
 import com.example.anuraj.tutorialsapplication.activities.fragments.FragmentActivity;
 import com.example.anuraj.tutorialsapplication.activities.fragments.ViewPagerActivity;
@@ -33,6 +34,9 @@ public class HomeActivity extends AppCompatActivity implements MenuItemSelectedL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        TutorialsApp app = (TutorialsApp) getApplication();
+        app.setUserName("Raj");
 
         mTopicsList.add("LifeCycle");
         mTopicsList.add("Layouts");
@@ -58,6 +62,7 @@ public class HomeActivity extends AppCompatActivity implements MenuItemSelectedL
         mTopicsList.add("Notifications");
         mTopicsList.add("AlertDialog");
         mTopicsList.add("GoogleMap");
+        mTopicsList.add("Location");
         mTopicsList.add("Webservices");
         mTopicsList.add("Volley");
         mTopicsList.add("Retrofit");
