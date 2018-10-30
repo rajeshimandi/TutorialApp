@@ -10,7 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.anuraj.tutorialsapplication.R;
-import com.example.anuraj.tutorialsapplication.activities.TutorialsApp;
+import com.example.anuraj.tutorialsapplication.TutorialsApp;
 
 /**
  * Created by AnuRaj on 10/24/2018.

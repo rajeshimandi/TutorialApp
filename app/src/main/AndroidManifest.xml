@@ -40,6 +40,7 @@
         <activity android:name=".async.AyncTaskActivity" />
         <activity android:name=".menu.MenuActivity" />
         <activity android:name=".webview.WebViewActivity" />
+        <activity android:name=".service.IntentServiceActivity" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -57,10 +58,13 @@
             android:name=".googlemap.MapsActivity"
             android:label="@string/title_activity_maps" />
 
+
         <service
             android:name=".service.LocationTrackerService"
             android:exported="false" />
-
+        <service
+            android:name=".service.DiscountIntentService"
+            android:exported="false"></service>
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package com.example.anuraj.tutorialsapplication.home;
 
+import android.app.IntentService;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -20,6 +21,7 @@ import com.example.anuraj.tutorialsapplication.intents.ActivityA;
 import com.example.anuraj.tutorialsapplication.lifecycle.LifeCycleActivity;
 import com.example.anuraj.tutorialsapplication.menu.MenuActivity;
 import com.example.anuraj.tutorialsapplication.retrofit.RetrofitActivity;
+import com.example.anuraj.tutorialsapplication.service.IntentServiceActivity;
 import com.example.anuraj.tutorialsapplication.sharedprefs.SharedPrefActivity;
 import com.example.anuraj.tutorialsapplication.uiwidgets.UIWidgetsActivity;
 import com.example.anuraj.tutorialsapplication.webview.WebViewActivity;
@@ -139,6 +141,10 @@ public class HomeActivity extends AppCompatActivity implements MenuItemSelectedL
 
             case "WebView":
                 startActivity(new Intent(HomeActivity.this, WebViewActivity.class));
+                break;
+
+            case "IntentService":
+                startActivity(new Intent(HomeActivity.this, IntentServiceActivity.class));
                 break;
         }
 

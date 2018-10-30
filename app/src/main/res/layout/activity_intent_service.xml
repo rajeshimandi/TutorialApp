@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_intent_service"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/disc_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <EditText
+        android:id="@+id/disc_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></EditText>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startDiscService"
+        android:text="Get Discount Info"></Button>
+</LinearLayout>
