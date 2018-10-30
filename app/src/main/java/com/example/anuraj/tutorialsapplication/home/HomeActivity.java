@@ -1,14 +1,10 @@
 package com.example.anuraj.tutorialsapplication.home;
 
-import android.app.IntentService;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.view.Menu;
 import android.widget.Toast;
 
 import com.example.anuraj.tutorialsapplication.R;
@@ -146,6 +142,7 @@ public class HomeActivity extends AppCompatActivity implements MenuItemSelectedL
             case "IntentService":
                 startActivity(new Intent(HomeActivity.this, IntentServiceActivity.class));
                 break;
+
         }
 
     }

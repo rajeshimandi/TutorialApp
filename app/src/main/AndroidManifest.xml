@@ -65,6 +65,13 @@
         <service
             android:name=".service.DiscountIntentService"
             android:exported="false"></service>
+
+        <receiver android:name=".broadcastreceiver.ConnectivityReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE"></action>
+            </intent-filter>
+
+        </receiver>
     </application>
 
 </manifest>
