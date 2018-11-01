@@ -41,6 +41,10 @@
         <activity android:name=".menu.MenuActivity" />
         <activity android:name=".webview.WebViewActivity" />
         <activity android:name=".service.IntentServiceActivity" />
+        <activity android:name=".parcelable.ParcelableActivityA" />
+        <activity android:name=".parcelable.ParcelableActivityB" />
+        <activity android:name=".notification.NotificationActivity" />
+        <activity android:name=".sqlite.SQLiteActivity" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

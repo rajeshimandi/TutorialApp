@@ -9,4 +9,11 @@
     <string name="msg_enable_loc_services">Please enable location services</string>
     <string name="error_msg_loc_denied">Location permission denied</string>
 
+    <string name="action_settings">Settings</string>
+    <string name="activity_title_home">Notes</string>
+    <string name="msg_no_notes">No notes found!</string>
+    <string name="lbl_new_note_title">New Note</string>
+    <string name="lbl_edit_note_title">Edit Note</string>
+    <string name="hint_enter_note">Enter your note!</string>
+
 </resources>

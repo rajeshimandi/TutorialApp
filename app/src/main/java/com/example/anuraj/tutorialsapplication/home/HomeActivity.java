@@ -1,6 +1,8 @@
 package com.example.anuraj.tutorialsapplication.home;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -16,9 +18,12 @@ import com.example.anuraj.tutorialsapplication.googlemap.MapsActivity;
 import com.example.anuraj.tutorialsapplication.intents.ActivityA;
 import com.example.anuraj.tutorialsapplication.lifecycle.LifeCycleActivity;
 import com.example.anuraj.tutorialsapplication.menu.MenuActivity;
+import com.example.anuraj.tutorialsapplication.notification.NotificationActivity;
+import com.example.anuraj.tutorialsapplication.parcelable.ParcelableActivityA;
 import com.example.anuraj.tutorialsapplication.retrofit.RetrofitActivity;
 import com.example.anuraj.tutorialsapplication.service.IntentServiceActivity;
 import com.example.anuraj.tutorialsapplication.sharedprefs.SharedPrefActivity;
+import com.example.anuraj.tutorialsapplication.sqlite.SQLiteActivity;
 import com.example.anuraj.tutorialsapplication.uiwidgets.UIWidgetsActivity;
 import com.example.anuraj.tutorialsapplication.webview.WebViewActivity;
 
@@ -51,13 +56,10 @@ public class HomeActivity extends AppCompatActivity implements MenuItemSelectedL
         mTopicsList.add("RecyclerView");
         mTopicsList.add("JSON-Parsing");
         mTopicsList.add("SharedPreferences");
-        mTopicsList.add("SQLite");
         mTopicsList.add("Service");
         mTopicsList.add("IntentService");
         mTopicsList.add("Broadcast Receiver");
-        mTopicsList.add("Content Provider");
         mTopicsList.add("WebView");
-        mTopicsList.add("Notifications");
         mTopicsList.add("AlertDialog");
         mTopicsList.add("GoogleMap");
         mTopicsList.add("Location");
@@ -67,15 +69,20 @@ public class HomeActivity extends AppCompatActivity implements MenuItemSelectedL
         mTopicsList.add("AsyncTask");
         mTopicsList.add("Media");
         mTopicsList.add("Localization");
-        mTopicsList.add("Progaurd");
         mTopicsList.add("Building Universal App");
         mTopicsList.add("DVM vs ART");
-        mTopicsList.add("Product Flavours");
-        mTopicsList.add("Unit Test Cases");
         mTopicsList.add("Runtime Permissions");
-        mTopicsList.add("LaunchMode");
         mTopicsList.add("Git");
+
+
+        mTopicsList.add("SQLite");
         mTopicsList.add("Parcelable / Seriazable");
+        mTopicsList.add("Unit Test Cases");
+        mTopicsList.add("Product Flavours");
+        mTopicsList.add("Progaurd");
+        mTopicsList.add("LaunchMode");
+        mTopicsList.add("Content Provider");
+        mTopicsList.add("Notifications");
 
         RecyclerView menuRecyclerView = findViewById(R.id.menuRecyclerView);
 
@@ -85,6 +92,16 @@ public class HomeActivity extends AppCompatActivity implements MenuItemSelectedL
         menuRecyclerView.setLayoutManager(layoutManager);
         menuRecyclerView.setAdapter(listAdapter);
 
+
+        /*AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("These are the list of Topics");
+        builder.setNeutralButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        }).create();
+        builder.show();*/
 
     }
 
@@ -141,6 +158,18 @@ public class HomeActivity extends AppCompatActivity implements MenuItemSelectedL
 
             case "IntentService":
                 startActivity(new Intent(HomeActivity.this, IntentServiceActivity.class));
+                break;
+
+            case "Parcelable / Seriazable":
+                startActivity(new Intent(HomeActivity.this, ParcelableActivityA.class));
+                break;
+
+            case "Notifications":
+                startActivity(new Intent(HomeActivity.this, NotificationActivity.class));
+                break;
+
+                case "SQLite":
+                startActivity(new Intent(HomeActivity.this, SQLiteActivity.class));
                 break;
 
         }
